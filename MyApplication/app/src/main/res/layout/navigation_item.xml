@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:clipChildren="false"
+        android:paddingBottom="2dp">
+
+        <ImageView
+            android:id="@+id/navigation_icon"
+            android:layout_width="@dimen/menu_icon_destination"
+            android:layout_height="@dimen/menu_icon_destination"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:padding="@dimen/menu_icon_padding" />
+
+        <TextView
+            android:id="@+id/navigation_shortcut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/navigation_icon"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="-2dp"
+            android:layout_toRightOf="@+id/navigation_icon"
+            android:background="@drawable/icon_unread"
+            android:gravity="center"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:text="1"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/navigation_title"
+            style="@style/NavigationLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/navigation_icon"
+            android:layout_centerHorizontal="true"
+            android:text="text" />
+
+    </RelativeLayout>
+</FrameLayout>

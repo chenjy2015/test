@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="divider_gray">#B2B2B2</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="blue">#1087F7</color>
+    <color name="toolbar">#FFFFFF</color>
+    <color name="translucent">#000000ff</color>
+    <color name="transparent">#00000000</color>
+
+
+    <color name="default_text_color_normal">#AEFFFFFF</color>
+    <color name="default_text_color_selected">#FFFFFF</color>
+    <color name="default_text_color_subtitle">#33FFFFFF</color>
+    <color name="window_background_start">#222635</color>
+    <color name="window_background_center">#222635</color>
+    <color name="window_background_end">#222635</color>
+
+    <color name="divider">#FFDDDDDD</color>
+    <color name="bg_top_bar">#FFFFFFFF</color>
+    <color name="alpha_white">#4CFFFFFF</color>
+    <color name="bg_color">#FFFFFFFF</color>
+    <color name="text_hint">#999999</color>
+    <color name="text_black">#333333</color>
+    <color name="text_white">#FFFFFF</color>
+    <color name="text_red">#F03030</color>
+
+    <color name="gray2">#E3E3E3</color>
+    <color name="main_theme_blue">#1884f3</color>
+    <color name="text_blue">#3699ff</color>
+    <color name="translucent_10">#E6000000</color>
+    <color name="translucent_20">#CC000000</color>
+    <color name="translucent_30">#B3000000</color>
+    <color name="translucent_70">#4D000000</color>
+    <color name="gray_light">#FFF3F3F3</color>
+    <color name="toolbar_line">#999999</color>
+    <color name="color_333333">#333333</color>
+    <color name="color_353535">#353535</color>
+    <color name="line_color_1">#e5e5e5</color>
+    <color name="item_press_normal">#F3F4F8</color>
+    <color name="divider_color">#e5e5e5</color>
+</resources>

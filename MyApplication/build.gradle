@@ -1,0 +1,97 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+
+    repositories {
+//        jcenter()
+//        google() 
+//        maven { url 'https://dl.google.com/dl/android/maven2/' }
+        maven { url 'https://mirrors.huaweicloud.com/repository/maven/' } // Huawei Maven mirrors
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+        maven { url 'https://jitpack.io' }
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:$ANDROID_BUILD_VERSION"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$KOTLIN_VERSION"
+        classpath "guru.stefma.bintrayrelease:bintrayrelease:$BINTRAY_RELEASE_VERSION"
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+//        jcenter()
+//        google()
+//        maven { url 'https://dl.google.com/dl/android/maven2/' }
+        maven { url 'https://mirrors.huaweicloud.com/repository/maven/' } // Huawei Maven mirrors
+        maven { url 'https://dl.bintray.com/panpf/maven' }
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext {
+    supportVersion = '1.0.0'
+    UAT = true
+
+    android = [
+            applicationId    : "com.netsense.rebuild",
+            versionCode      : 1,
+            versionName      : '0.0.15',
+            compileSdkVersion: 28,
+            buildToolsVersion: '28.0.3',
+            //云盘最小支持17
+            minSdkVersion    : 17,
+            targetSdkVersion : 28,
+            minifyEnabled    : false
+    ]
+
+    dependencies = [
+            appcompatV7     : 'androidx.appcompat:appcompat:' + supportVersion,
+            supportV4       : 'androidx.legacy:legacy-support-v4:' + supportVersion,
+            recyclerviewV7  : 'androidx.recyclerview:recyclerview:' + supportVersion,
+            design          : 'com.google.android.material:material:' + supportVersion,
+            annotations     : 'com.android.support:support-annotations:' + supportVersion,
+            cardview        : 'com.android.support:cardview-v7:' + supportVersion,
+            percent         : 'com.android.support:percent:' + supportVersion,
+            auto_service    : 'com.google.auto.service:auto-service:1.0-rc3',
+
+            protobuf        : 'com.google.protobuf:protobuf-java:3.5.1',
+            protobufUtil    : 'com.google.protobuf:protobuf-java-util:3.5.1',
+            protobufProtoc  : 'com.google.protobuf:protoc:3.5.1',
+
+            rxAndroid       : 'io.reactivex.rxjava2:rxandroid:2.0.1',
+            rxJava          : 'io.reactivex.rxjava2:rxjava:2.1.5',
+            rxBinding       : 'com.jakewharton.rxbinding2:rxbinding:2.1.1',
+            rxLifecycle     : 'com.trello.rxlifecycle2:rxlifecycle-android:2.1.0',
+            rxComponents    : 'com.trello.rxlifecycle2:rxlifecycle-components:2.1.0',
+
+            retrofit        : 'com.squareup.retrofit2:retrofit:2.3.0', // 必要retrofit依赖
+            retrofit_gson   : 'com.squareup.retrofit2:converter-gson:2.3.0', // 必要依赖，解析json字符所用
+            retrofit_logging: 'com.squareup.okhttp3:logging-interceptor:3.8.1', //非必要依赖， log依赖，如果需要打印OkHttpLog需要添加
+
+            okHttp          : 'com.squareup.okhttp3:okhttp:3.10.0',
+            gson            : 'com.google.code.gson:gson:2.8.4',
+            glide           : 'com.github.bumptech.glide:glide:4.6.1',
+            glideProcessor  : 'com.github.bumptech.glide:compiler:4.6.1',
+
+            blanjk          : 'com.blankj:utilcode:1.22.0',
+            flexibledivider : 'com.yqritc:recyclerview-flexibledivider:1.4.0',
+            multitype       : 'me.drakeet.multitype:multitype:3.3.0',
+
+            sketch          : 'me.panpf:sketch-gif:2.7.0',
+            sketch_git      : 'me.panpf:sketch-gif:2.7.0',
+    ]
+
+    //library版本
+    jjdxm_minSdkVersion = 9
+    jjdxm_versionCode = 1
+    jjdxm_versionName = "1.0.0"
+    jjdxm_v4 = 'com.android.support:support-v4:28.0.0'
+    jjdxm_v7 = 'com.android.support:appcompat-v7:28.0.0'
+}

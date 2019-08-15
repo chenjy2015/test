@@ -1,0 +1,54 @@
+<resources>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+
+    <dimen name="padding_btn">22dp</dimen>
+    <dimen name="padding_1">54dp</dimen>
+    <dimen name="padding_3">30dp</dimen>
+    <dimen name="padding_4">24dp</dimen>
+    <dimen name="padding_5">18dp</dimen>
+    <dimen name="padding_5_2">16dp</dimen>
+    <dimen name="padding_6">12dp</dimen>
+    <dimen name="padding_6_1">8dp</dimen>
+    <dimen name="padding_7">6dp</dimen>
+    <dimen name="padding_8">4dp</dimen>
+
+    <dimen name="sp_0">26sp</dimen>
+    <dimen name="sp_0_1">22sp</dimen>
+    <dimen name="sp_1">20sp</dimen>
+    <dimen name="sp_2">18sp</dimen>
+    <dimen name="sp_3">15sp</dimen>
+    <dimen name="sp_4">14sp</dimen>
+    <dimen name="sp_5">13sp</dimen>
+
+    <dimen name="sp_6">12sp</dimen>
+    <dimen name="sp_7">11sp</dimen>
+
+    <dimen name="divider_height">0.1dp</dimen>
+
+    <dimen name="width_pager">325dp</dimen>
+    <dimen name="width_min_top_bar">60dp</dimen>
+    <dimen name="width_divider">1px</dimen>
+    <dimen name="width_left_user_info">80dp</dimen>
+    <dimen name="height_btn">45dp</dimen>
+    <dimen name="height_user_info">60dp</dimen>
+    <dimen name="height_navigation">50dp</dimen>
+    <dimen name="height_status_bar">24dp</dimen>
+    <dimen name="height_top_fragment_main">78dp</dimen>
+    <dimen name="height_logo">40dp</dimen>
+    <dimen name="height_setting_user">112dp</dimen>
+    <dimen name="height_icon_little">16dp</dimen>
+    <dimen name="height_top_bar">44dp</dimen>
+    <dimen name="height_pager">150dp</dimen>
+    <dimen name="height_menu">45dp</dimen>
+
+    <dimen name="text_size_6">11sp</dimen>
+    <dimen name="navi_bar_height">45dp</dimen>
+    <!--导航栏大小 控件大小20dp，边距pandding 2dp-->
+    <dimen name="menu_icon_outline">24dp</dimen>
+    <dimen name="menu_icon_destination">24dp</dimen>
+    <dimen name="menu_icon_padding">2dp</dimen>
+    <!-- 20px  底部文字及描述信息-->
+    <dimen name="des_text_10">10dp</dimen>
+</resources>

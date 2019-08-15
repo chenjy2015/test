@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ParallaxViewPager">
+        <attr name="mode">
+            <enum name="left_overlay" value="0" />
+            <enum name="right_overlay" value="1" />
+            <enum name="none" value="2" />
+        </attr>
+        <attr name="outset" format="fraction|dimension" />
+        <attr name="interpolator" format="reference" />
+        <attr name="shadow_width" format="dimension" />
+        <attr name="left_shadow" format="reference" />
+        <attr name="right_shadow" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="PraiseListView">
+        <attr name="item_color" format="color" />
+        <attr name="item_selector_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="ExpandTextView">
+        <attr name="showLines" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="MovieRecorderView">
+        <!-- 开始是否打开摄像头 -->
+        <attr name="is_open_camera" format="boolean" />
+        <!-- 一次拍摄最长时间 -->
+        <attr name="record_max_time" format="integer" />
+        <!-- 视频分辨率宽度 -->
+        <attr name="width" format="integer" />
+        <!-- 视频分辨率高度 -->
+        <attr name="height1" format="integer" />
+    </declare-styleable>
+
+
+    <declare-styleable name="StatusBarHeightView">
+        <attr name="use_type" format="integer">
+            <enum name="use_height" value="0" />
+            <enum name="use_padding_top" value="1" />
+        </attr>
+    </declare-styleable>
+    
+</resources>

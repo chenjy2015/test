@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:color="@color/divider_gray"
+    tools:ignore="MissingDefaultResource"><!-- press和水波纹的颜色 -->
+    <item>
+        <!--item中可以自定义shape-->
+        <shape
+            android:innerRadius="0dp"
+            android:shape="rectangle">
+            <solid android:color="@color/white" />
+            <corners android:radius="0dp" />
+        </shape>
+    </item>
+    <!--或者直接定义normal(未点击)状态下的颜色-->
+    <!--<item android:drawable="@color/colorPrimary" />-->
+</ripple>

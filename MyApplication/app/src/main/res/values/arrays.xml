@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <declare-styleable name="SwipeLayout">
+        <attr name="drag_edge" format="enum">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+            <enum name="top" value="2" />
+            <enum name="bottom" value="3" />
+        </attr>
+        <attr name="show_mode" format="enum">
+            <enum name="lay_down" value="0" />
+            <enum name="pull_out" value="1" />
+        </attr>
+    </declare-styleable>
+    <string-array name="arrays_im_online_text">
+        <item>Online</item>
+        <item>Away</item>
+        <item>Offline</item>
+    </string-array>
+    <string-array name="arrays_setting_dialog_leave">
+        <item>Busy now</item>
+        <item> Come back soon</item>
+        <item>At the meeting</item>
+        <item>Not in the Office</item>
+        <item>Out of service, please send sms</item>
+    </string-array>
+    <string-array name="arrays_userinfo_sex">
+        <item>male</item>
+        <item>female</item>
+    </string-array>
+    <string-array name="arrays_userinfo_album">
+        <item>Choose Photo</item>
+        <item>Take Photo</item>
+        <!-- <item>Remove the head</item> 当前版本不提供删除头像 -->
+    </string-array>
+    <string-array name="arrays_menu_chat">
+        <item>Photo</item>
+        <item>Camera</item>
+        <item>Video</item>
+        <item>Receipt</item>
+        <item>RedPacket</item>
+        <item>CloudFile</item>
+        <item>Meeting</item>
+        <item>BAR</item>
+        <item>Location</item>
+    </string-array>
+
+    <string-array name="arrays_menu_chat_no_bar">
+        <item>Photo</item>
+        <item>Camera</item>
+        <item>Video</item>
+        <item>Receipt</item>
+        <item>RedPacket</item>
+        <item>CloudFile</item>
+        <item>Meeting</item>
+        <item>Location</item>
+    </string-array>
+
+    <declare-styleable name="MarqueeViewStyle">
+        <attr name="mvInterval" format="integer|reference" />
+        <attr name="mvAnimDuration" format="integer|reference" />
+        <attr name="mvTextSize" format="dimension|reference" />
+        <attr name="mvTextColor" format="color|reference" />
+        <attr name="mvSingleLine" format="boolean" />
+        <attr name="mvGravity">
+            <enum name="left" value="0" />
+            <enum name="center" value="1" />
+            <enum name="right" value="2" />
+        </attr>
+        <attr name="mvDirection">
+            <enum name="bottom_to_top" value="0" />
+            <enum name="top_to_bottom" value="1" />
+            <enum name="right_to_left" value="2" />
+            <enum name="left_to_right" value="3" />
+        </attr>
+    </declare-styleable>
+
+    <array name="fileEndingImage">
+        <item>.png</item>
+        <item>.gif</item>
+        <item>.jpg</item>
+        <item>.jpeg</item>
+        <item>.bmp</item>
+    </array>
+    <array name="fileImage">
+        <item>.png</item>
+        <item>.jpg</item>
+        <item>.jpeg</item>
+        <item>.bmp</item>
+    </array>
+    <array name="fileEndingAudio">
+        <item>.mp3</item>
+        <item>.wav</item>
+        <item>.ogg</item>
+        <item>.midi</item>
+    </array>
+    <array name="fileEndingVideo">
+        <item>.mp4</item>
+        <item>.rmvb</item>
+        <item>.avi</item>
+        <item>.flv</item>
+    </array>
+    <array name="fileEndingPackage">
+        <item>.zip</item>
+        <item>.rar</item>
+        <!-- <item>.jar</item>
+         <item>.gz</item>
+         <item>.apk</item>
+         <item>.img</item>-->
+    </array>
+    <array name="fileEndingWebText">
+        <item>.htm</item>
+        <item>.html</item>
+        <item>.php</item>
+        <item>.jsp</item>
+    </array>
+    <array name="fileEndingText">
+        <item>.txt</item>
+        <!--<item>.java</item>
+        <item>.c</item>
+        <item>.cpp</item>
+        <item>.py</item>
+        <item>.xml</item>
+        <item>.json</item>
+        <item>.log</item>-->
+    </array>
+
+    <array name="fileCollectionOpenText">
+        <item>.txt</item>
+        <item>.java</item>
+        <item>.c</item>
+        <item>.cpp</item>
+        <item>.py</item>
+        <item>.xml</item>
+        <item>.json</item>
+        <item>.log</item>
+    </array>
+
+    <array name="fileEndingWord">
+        <item>.doc</item>
+        <item>.docx</item>
+    </array>
+    <array name="fileEndingExcel">
+        <item>.xls</item>
+        <item>.xlsx</item>
+    </array>
+    <array name="fileEndingPPT">
+        <item>.ppt</item>
+        <item>.pptx</item>
+    </array>
+    <array name="fileEndingPdf">
+        <item>.pdf</item>
+    </array>
+    <array name="schedule_type">
+        <item>不提醒</item>
+        <item>正点</item>
+        <item>10分钟</item>
+        <item>30分钟</item>
+        <item>1小时</item>
+        <item>1天前</item>
+    </array>
+    <array name="setting_font_size">
+        <item>Auto</item>
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Large</item>
+        <item>X-Large</item>
+    </array>
+    <array name="setting_font">
+        <item>sans</item>
+        <item>serif</item>
+        <item>monospace</item>
+    </array>
+
+    <string-array name="country_codes" tools:ignore="MissingTranslation">
+        <item>-</item>
+        <item>AR</item>
+        <item>AU</item>
+        <item>BR</item>
+        <item>BG</item>
+        <item>CA</item>
+        <item>CH</item>
+        <item>CN</item>
+        <item>CZ</item>
+        <item>DE</item>
+        <item>DK</item>
+        <item>ES</item>
+        <item>FI</item>
+        <item>FR</item>
+        <item>GB</item>
+        <item>GR</item>
+        <item>HU</item>
+        <item>ID</item>
+        <item>IT</item>
+        <item>JP</item>
+        <item>KR</item>
+        <item>NL</item>
+        <item>PL</item>
+        <item>PT</item>
+        <item>RO</item>
+        <item>RU</item>
+        <item>SE</item>
+        <item>SK</item>
+        <item>SI</item>
+        <item>TR</item>
+        <item>TW</item>
+        <item>US</item>
+    </string-array>
+    <string-array name="preferences_front_light_values" tools:ignore="MissingTranslation">
+        <item>ON</item>
+        <item>AUTO</item>
+        <item>OFF</item>
+    </string-array>
+
+    <string-array name="setting_items">
+        <item>消息提醒设置</item>
+        <item>通用</item>
+    </string-array>
+
+    <string-array name="session_bg_items">
+        <item>选择背景图</item>
+        <item>从手机相册选择</item>
+        <item>拍一张</item>
+    </string-array>
+
+    <string-array name="text_size_model">
+        <item>跟随系统</item>
+        <item>小</item>
+        <item>中</item>
+        <item>大</item>
+        <item>超大</item>
+    </string-array>
+
+    <string-array name="text_size_value">
+        <item>1</item>
+        <item>0.8</item>
+        <item>1.1</item>
+        <item>1.2</item>
+        <item>1.3</item>
+    </string-array>
+</resources>

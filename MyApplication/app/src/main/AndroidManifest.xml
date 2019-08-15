@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.chenjy.myapplication">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:name=".application.CXApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name=".ui.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.LaunchModeActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".ui.MultiSelectActivity" />
+        <activity android:name=".ui.MultiSelect2Activity" />
+        <activity android:name=".ui.MultiSelect3Activity" />
+        <activity android:name=".ui.LargeImageActivity" />
+        <activity android:name=".ui.ScaleImageActivity" />
+        <activity android:name=".ui.SketchListActivity" />
+        <activity android:name=".ui.DetailsDisplayActivity" />
+        <activity
+            android:name=".ui.VideoPlayerActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:hardwareAccelerated="true"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".ui.SortActivity" />
+        <activity android:name=".ui.NotificationActivity" />
+        <activity android:name=".ui.ProxyActivity" />
+        <activity android:name=".ui.EmojiActivity" />
+        <activity android:name=".ui.WebViewActivity" />
+        <activity android:name=".ui.TextSizeSettingActivity" />
+        <activity android:name=".ui.PermissionActivity" />
+        <activity android:name=".ui.BigImageActivity" />
+        <activity android:name=".ui.SketchViewPagerActivity" />
+        <activity android:name=".ui.ZipActivity" />
+        <activity android:name=".ui.AnnotationActivity" />
+        <activity android:name=".ui.RetrofitDemoActivity" />
+        <activity android:name=".ui.thread.ThreadDemoActivity" />
+        <activity android:name=".ui.OkHttpActivity" />
+        <activity android:name=".ui.ProcessTestActivity" />
+        <activity android:name=".ui.MessengerActivity" />
+
+        <service
+            android:name=".services.ProcessTestService"
+            android:process=":test" />
+        <service
+            android:name=".services.MessengerService"
+            android:process="com.example.chenjy.myapplication.services.messenger" />
+        <service
+            android:name=".services.AIDLService"
+            android:process="com.example.chenjy.myapplication.services.aidl" />
+
+        <activity android:name=".ui.AIDLDemoActivity" />
+        <activity android:name=".ui.LiveDataActivity"></activity>
+    </application>
+
+</manifest>

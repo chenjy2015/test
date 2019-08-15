@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pv="http://schemas.android.com/apk/res-auto">
+
+    <data />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.example.chenjy.myapplication.parallx_viewpager.ParallaxViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            pv:interpolator="@anim/decelerate_interpolator"
+            pv:mode="right_overlay"
+            pv:outset="90%"
+            pv:shadow_width="10dp" />
+
+
+    </LinearLayout>
+
+</layout>

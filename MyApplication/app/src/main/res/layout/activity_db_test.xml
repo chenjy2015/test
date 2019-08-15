@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp" />
+
+            <ProgressBar
+                android:id="@+id/pb"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:max="100"
+                android:progress="30" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+            <!--<Button-->
+            <!--android:id="@+id/insert"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="插入" />-->
+
+            <!--<Button-->
+            <!--android:id="@+id/query"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="查询" />-->
+
+            <!--<Button-->
+            <!--android:id="@+id/multi"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="多选界面" />-->
+
+            <!--<Button-->
+            <!--android:id="@+id/multi2"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="多选界面2" />-->
+
+            <!--<Button-->
+            <!--android:id="@+id/multi3"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="多选界面3" />-->
+
+            <!--<Button-->
+            <!--android:id="@+id/sliding_img"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="滑动浏览" />-->
+
+            <!--<Button-->
+            <!--android:id="@+id/scale"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="缩放大图" />-->
+
+            <!--<Button-->
+            <!--android:id="@+id/sketch_img"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="sketch" />-->
+
+            <!--<Button-->
+            <!--android:id="@+id/video"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="video" />-->
+
+            <!--<Button-->
+            <!--android:id="@+id/vibrator"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="vibrator" />-->
+
+            <!--<Button-->
+            <!--android:id="@+id/sort"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="按字母排序" />-->
+
+            <!--<Button-->
+            <!--android:id="@+id/notification"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="通知测试" />-->
+
+            <!--<Button-->
+            <!--android:id="@+id/emoji"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="表情测试" />-->
+
+            <!--<Button-->
+            <!--android:id="@+id/webview"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="webview测试" />-->
+
+            <!--<Button-->
+            <!--android:id="@+id/textSize"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="会话字号测试" />-->
+
+            <!--<Button-->
+            <!--android:id="@+id/permission"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="权限测试" />-->
+
+            <!--<Button-->
+            <!--android:id="@+id/big_img"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="大图测试" />-->
+
+            <!--<Button-->
+            <!--android:id="@+id/view_pager"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="viewpager" />-->
+
+            <!--<Button-->
+            <!--android:id="@+id/zip"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="zip" />-->
+        </LinearLayout>
+    </ScrollView>
+
+</layout>
