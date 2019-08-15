@@ -17,7 +17,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
             android:gravity="center"
-            android:text="sss"
+            tools:text="sss"
             android:textSize="22sp" />
     </LinearLayout>
 
